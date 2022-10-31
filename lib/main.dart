@@ -1,6 +1,8 @@
 import 'package:dhpversion2/Pages/Login/login_screen.dart';
+import 'package:dhpversion2/Pages/SignUp/components/sign_up_form.dart';
 import 'package:flutter/material.dart';
 
+import 'Pages/SignUp/signup_screen.dart';
 import 'const/constant.dart';
 
 void main() => runApp(const MyApp());
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
               borderSide: BorderSide.none,
             ),
           )),
-      home: const LoginScreen(),
+      home: const SignUpBody(),
     );
   }
 }

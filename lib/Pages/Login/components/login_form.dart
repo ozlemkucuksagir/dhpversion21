@@ -10,73 +10,75 @@ class LoginForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Form(
-      child: Column(
-        children: [
-          Divider(
-            height: MediaQuery.of(context).size.height * 0.08,
-            color: Colors.grey[400],
-            thickness: 1,
-          ),
-
-          TextFormField(
-            keyboardType: TextInputType.emailAddress,
-            textInputAction: TextInputAction.next,
-            cursorColor: kPrimaryColor,
-            onSaved: (email) {},
-            decoration: InputDecoration(
-              hintText: "Your email",
-              prefixIcon: Padding(
-                padding: const EdgeInsets.all(defaultPadding),
-                child: Icon(
-                  Icons.person,
-                  color: Colors.grey[300],
-                ),
-              ),
+    return Container(
+      child: Form(
+        child: Column(
+          children: [
+            Divider(
+              height: MediaQuery.of(context).size.height * 0.08,
+              color: Colors.grey[400],
+              thickness: 1,
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: defaultPadding),
-            child: TextFormField(
-              textInputAction: TextInputAction.done,
-              obscureText: true,
+
+            TextFormField(
+              keyboardType: TextInputType.emailAddress,
+              textInputAction: TextInputAction.next,
               cursorColor: kPrimaryColor,
+              onSaved: (email) {},
               decoration: InputDecoration(
-                hintText: "Your password",
+                hintText: "Your email",
                 prefixIcon: Padding(
                   padding: const EdgeInsets.all(defaultPadding),
                   child: Icon(
-                    Icons.lock,
+                    Icons.person,
                     color: Colors.grey[300],
                   ),
                 ),
               ),
             ),
-          ),
-          const SizedBox(height: defaultPadding),
-          Hero(
-            tag: "login_btn",
-            child: ElevatedButton(
-              onPressed: () {},
-              child: Text(
-                "Login".toUpperCase(),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+              child: TextFormField(
+                textInputAction: TextInputAction.done,
+                obscureText: true,
+                cursorColor: kPrimaryColor,
+                decoration: InputDecoration(
+                  hintText: "Your password",
+                  prefixIcon: Padding(
+                    padding: const EdgeInsets.all(defaultPadding),
+                    child: Icon(
+                      Icons.lock,
+                      color: Colors.grey[300],
+                    ),
+                  ),
+                ),
               ),
             ),
-          ),
-          const SizedBox(height: defaultPadding),
-          // AlreadyHaveAnAccountCheck(
-          //   press: () {
-          //     Navigator.push(
-          //       context,
-          //       MaterialPageRoute(
-          //         builder: (context) {
-          //           return SignUpScreen();
-          //         },
-          //       ),
-          //     );
-          //   },
-          // ),
-        ],
+            const SizedBox(height: defaultPadding),
+            Hero(
+              tag: "login_btn",
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Text(
+                  "Login".toUpperCase(),
+                ),
+              ),
+            ),
+            const SizedBox(height: defaultPadding),
+            // AlreadyHaveAnAccountCheck(
+            //   press: () {
+            //     Navigator.push(
+            //       context,
+            //       MaterialPageRoute(
+            //         builder: (context) {
+            //           return SignUpScreen();
+            //         },
+            //       ),
+            //     );
+            //   },
+            // ),
+          ],
+        ),
       ),
     );
   }
