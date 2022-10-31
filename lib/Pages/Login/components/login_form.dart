@@ -23,7 +23,7 @@ class LoginForm extends StatelessWidget {
             TextFormField(
               keyboardType: TextInputType.emailAddress,
               textInputAction: TextInputAction.next,
-              cursorColor: kPrimaryColor,
+              cursorColor: kPrimaryLightColor,
               onSaved: (email) {},
               decoration: InputDecoration(
                 hintText: "Your email",

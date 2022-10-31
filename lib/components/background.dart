@@ -26,16 +26,8 @@ class Background extends StatelessWidget {
               child: Image.asset(
                 topImage,
               ),
-              width: 90,
+              width: 125,
             ),
-            // Positioned(
-            //   top: MediaQuery.of(context).size.height * 0.05,
-            //   left: MediaQuery.of(context).size.width * 0.6,
-            //   child: Image.asset(
-            //     "assets/images/image3.png",
-            //   ),
-            //   width: 200,
-            // ),
             Positioned(
               top: MediaQuery.of(context).size.height * 0.1,
               child: Image.asset(

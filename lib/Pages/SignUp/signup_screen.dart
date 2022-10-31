@@ -15,7 +15,7 @@ class SignupScreen extends StatelessWidget {
     return Background(
       child: SingleChildScrollView(
         child: Responsive(
-          mobile: const MobileLoginScreen(),
+          mobile: const MobileSignupScreen(),
           desktop: Row(
             children: [
               // const Expanded(
@@ -43,8 +43,8 @@ class SignupScreen extends StatelessWidget {
   }
 }
 
-class MobileLoginScreen extends StatelessWidget {
-  const MobileLoginScreen({
+class MobileSignupScreen extends StatelessWidget {
+  const MobileSignupScreen({
     Key? key,
   }) : super(key: key);
 
